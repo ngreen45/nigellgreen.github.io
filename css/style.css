@@ -1,0 +1,100 @@
+@font-face {
+  font-family: headerFont;
+  src: url(/fonts/PoiretOne-Regular.ttf);
+}
+@font-face {
+  font-family: navBar;
+  src: url(/fonts/Quicksand-Book.otf);
+}
+body {
+  margin: 0;
+}
+.header {
+  background: linear-gradient(-45deg, #c0392b 0%, #8e44ad 51%, #c0392b 100%);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 360px;
+  width: 100%;
+}
+.hero {
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+}
+.profile{
+ display: flex;
+ align-items: center;
+ justify-content: left;
+ overflow: hidden;
+ margin-bottom: -30px;
+ padding-top: 35px;
+ 
+}
+h1 {
+  font-size: 39px;
+  font-family: headerFont;
+}
+h2{
+  font-family: navBar;
+  font-weight: lighter;
+}
+h1,
+h2 {
+  color: #fff;
+}
+
+.nav {
+  position: absolute; top: 220px; left: 60px;
+  display: flex;
+  height: 150px;
+}
+.btn-grad {
+  background-color: black;
+}
+.btn-grad {
+  display: inline-block;
+  height: 60px;
+  width: 170px;
+  border: 1px;
+  text-align: center;
+  font-family: navBar;
+  font-size: 20px;
+  text-transform: lowercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white ;
+  box-shadow: 0 0 20px rgba(238, 238, 238, 0.801);
+  border-radius: 25px;
+}
+.divider {
+  width: 15px;
+  height: auto;
+  display: inline-block;
+}
+.btn-grad:hover {
+  background: linear-gradient(-45deg, #c0392b 0%, #8e44ad 51%, #c0392b 100%);
+  background-size: 400% 400%;
+  transition: linear;
+  transition-duration: .2s;
+  animation: gradient 10s ease infinite;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff ;
+  height: 60px;
+  width: 170px;
+  font-size: 25px;
+  border-radius: 0%;
+  opacity: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
